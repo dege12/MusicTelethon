@@ -94,7 +94,7 @@ async def play(client, m: Message):
                     caption=f"""
 **🏷️ العنوان : [{songname}]({link})
 💬 ايدي المحادثه : {chat_id}
-🎧 طلب من : {m.from_user.mention}**\n : [](t.me/ZDDDU)
+🎧 طلب من : {m.from_user.mention}**\n[𝐙 𝐀 𝐈 𝐃 🇵🇸 .](t.me/ZDDDU)
 """,                )
             else:
                 await call_py.join_group_call(                    chat_id,                    AudioPiped(                        dl,                    ),                    stream_type=StreamType().pulse_stream,                )
@@ -105,7 +105,7 @@ async def play(client, m: Message):
                     caption=f"""
 **🏷️ العنوان : [{songname}]({link})
 💬 ايدي المحادثه : {chat_id}
-🎧 طلب من : {m.from_user.mention}**\n : [](t.me/ZDDDU)
+🎧 طلب من : {m.from_user.mention}**\n[𝐙 𝐀 𝐈 𝐃 🇵🇸 .](t.me/ZDDDU)
 """,                )
 
     else:
@@ -136,7 +136,7 @@ async def play(client, m: Message):
 **🏷️  العنوان : [{songname}]({url})
 ⏱️ مده المقطع : {duration}
 💬 ايدي المحادثه : {chat_id}
-🎧 طلب من : {m.from_user.mention}**\n : [](t.me/ZDDDU)
+🎧 طلب من : {m.from_user.mention}**\n[𝐙 𝐀 𝐈 𝐃 🇵🇸 .](t.me/ZDDDU)
 """,
                         )
                     else:
@@ -157,7 +157,7 @@ async def play(client, m: Message):
 **🏷️  العنوان : [{songname}]({url})
 ⏱️ مده المقطع : {duration}
 💬 ايدي المحادثه : {chat_id}
-🎧 طلب من : {m.from_user.mention}**\n : [](t.me/ZDDDU)
+🎧 طلب من : {m.from_user.mention}**\n[𝐙 𝐀 𝐈 𝐃 🇵🇸 .](t.me/ZDDDU)
 """,
                             )
                         except Exception as ep:
@@ -199,7 +199,7 @@ async def vplay(client, m: Message):
                     caption=f"""
 **🏷️ العنوان : [{songname}]({link})
 💬 ايدي المحادثه : {chat_id}
-🎧 طلب من : {m.from_user.mention}**\n : [](t.me/ZDDDU)
+🎧 طلب من : {m.from_user.mention}**\n[𝐙 𝐀 𝐈 𝐃 🇵🇸 .](t.me/ZDDDU)
 """,
                 )
             else:
@@ -222,7 +222,7 @@ async def vplay(client, m: Message):
                     caption=f"""
 **🏷️ العنوان : [{songname}]({link})
 💬 ايدي المحادثه : {chat_id}
-🎧 طلب من : {m.from_user.mention}**\n : [](t.me/ZDDDU)
+🎧 طلب من : {m.from_user.mention}**\n[𝐙 𝐀 𝐈 𝐃 🇵🇸 .](t.me/ZDDDU)
 """,                )
 
     else:
@@ -255,7 +255,7 @@ async def vplay(client, m: Message):
 **🏷️  العنوان : [{songname}]({url})
 ⏱️ مده المقطع : {duration}
 💬 ايدي المحادثه : {chat_id}
-🎧 طلب من : {m.from_user.mention}**\n : [](t.me/ZDDDU)
+🎧 طلب من : {m.from_user.mention}**\n[𝐙 𝐀 𝐈 𝐃 🇵🇸 .](t.me/ZDDDU)
 """,                        )
                     else:
                         try:
@@ -268,7 +268,7 @@ async def vplay(client, m: Message):
 **🏷️  العنوان : [{songname}]({url})
 ⏱️ مده المقطع : {duration}
 💬 ايدي المحادثه : {chat_id}
-🎧 طلب من : {m.from_user.mention}**\n : [](t.me/ZDDDU)
+🎧 طلب من : {m.from_user.mention}**\n[𝐙 𝐀 𝐈 𝐃 🇵🇸 .](t.me/ZDDDU)
 """,                            )
                         except Exception as ep:
                             await huehue.edit(f"`{ep}`")
@@ -309,7 +309,7 @@ async def playfrom(client, m: Message):
 **▶ ابدأ تشغيل الأغاني من {chat}
 🏷️ العنوان : [{songname}]({link})
 💬 المحادثه : {chat_id}
-🎧 من الطلب : {m.from_user.mention}**\n : [](t.me/ZDDDU)
+🎧 من الطلب : {m.from_user.mention}**\n[𝐙 𝐀 𝐈 𝐃 🇵🇸 .](t.me/ZDDDU)
 """,                    )
             await hmm.delete()
             await m.reply(                f"➕ يضيف {lmt} أغنية في قائمة الانتظار \n• ارسل {HNDLR}التشغيل_التلقائي لاضاف اغنيه في القائمه الانتضار**"            )
@@ -336,7 +336,7 @@ async def playlist(client, m: Message):
             await m.reply(QUE, disable_web_page_preview=True)
     else:
         await m.reply("**❌ لايوجد هناك تشغيل تالي**")
-@Client.on_message(filters.command(["التالي"], prefixes=f"{HNDLR}"))
+@Client.on_message(filters.command(["تخطي"], prefixes=f"{HNDLR}"))
 @authorized_users_only
 async def skip(client, m: Message):
     await m.delete()
