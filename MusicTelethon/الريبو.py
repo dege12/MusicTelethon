@@ -18,7 +18,7 @@ async def _human_time_duration(seconds):
     return ", ".join(parts)
 
 
-@Client.on_message(    filters.user(SUDO_USERS) & filters.command(["restart","zaid","غدو","عسعس"], prefixes=f"{HNDLR}"))
+@Client.on_message(    filters.user(SUDO_USERS) & filters.command(["restart","zaid","غدو","عسعس","كوكو"], prefixes=f"{HNDLR}"))
 async def restart(client, m: Message):
     await m.delete()
     loli = await m.reply("**مرحباً عزيزي المطور {m.from_user.mention}\n༄ جار اعادة تشغيل البوت 1**")
