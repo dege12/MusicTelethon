@@ -1,0 +1,52 @@
+{
+    "name": "Music User Bor",
+    "logo": "https://telegra.ph/file/72fd63ee706b5ae14c312.jpg",
+    "description": " بوت تشغيل الاغاني في المكالمات من قبل سورس مدى @MQQQS ",
+    "keywords": ["music", "voice chat", "telegram"],
+    "repository": "",
+    "stack": "container",
+    "env": {
+        "API_HASH": {
+            "description": "- ضع هنا ايبي هاش .",
+            "required": true
+        },
+        "API_ID": {
+            "description": "- ضع هنا ايبي ايدي",
+            "required": true
+        },
+        "HNDLR": {
+            "description": "- هنا ضع الرمز الاساسي للأوامر .",
+            "required": false,
+            "value": "."
+        },
+        "SESSION": {
+            "description": "- ضع تيرمكس بايروقرام .",
+            "required": true,
+            "value": ""
+        },
+        "OWNER": {
+            "description": "- معرف حسابك الاساسي (المالك) مع علامه @",
+            "required": true,
+            "value": "@ZDDDU"
+        },
+        "THUMB": {
+            "description": "هنا هتحط صوره الخلفيه ان وجدت",
+            "required": false,
+            "value":"https://telegra.ph/file/72fd63ee706b5ae14c312.jpg"
+        },
+        "SUDO_USERS": {
+            "description": "حط ايدي المالك",
+            "required": true,
+            "value": ""
+        },
+        
+    },
+    "buildpacks": [
+    {
+      "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
+    },
+    {
+      "url": "heroku/python"
+    }
+  ]
+}
