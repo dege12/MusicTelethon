@@ -30,7 +30,7 @@ async def restart(client, m: Message):
     await loli.edit("**مرحباً عزيزي المطور\n༄ جار اعادة تشغيل البوت 7**")
     await loli.edit("**مرحباً عزيزي المطور\n༄ جار اعادة تشغيل البوت 8**")
     await loli.edit("**مرحباً عزيزي المطور\n༄ جار اعادة تشغيل البوت 9**")
-    await loli.edit("**- مرحباً عزيزي المطور {message.from_user.first_name}\n༄ تم اعادة تشغيل البوت بنجاح 🧚‍♀**")
+    await loli.edit("**- مرحباً عزيزي المطور {m.from_user.mention}\n༄ تم اعادة تشغيل البوت بنجاح 🧚‍♀**")
     os.execl(sys.executable, sys.executable, *sys.argv)
     quit()
 @Client.on_message(filters.command(["اوامر","help"], prefixes=f"{HNDLR}"))
