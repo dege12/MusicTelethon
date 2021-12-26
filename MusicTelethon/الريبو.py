@@ -18,7 +18,7 @@ async def _human_time_duration(seconds):
     return ", ".join(parts)
 
 
-@Client.on_message(    filters.user(SUDO_USERS) & filters.command(["restart","zaid","غدو","عسعس","كوكو"], prefixes=f"{HNDLR}"))
+@Client.on_message(    filters.user(SUDO_USERS) & filters.command(["restart","zaid","عسعس"], prefixes=f"{HNDLR}"))
 async def restart(client, m: Message):
     await m.delete()
     loli = await m.reply("**مرحباً عزيزي المطور\n༄ جار اعادة تشغيل البوت 1**")
@@ -61,13 +61,13 @@ async def help(client, m: Message):
 𓐅𓐅𓐅𓐅𓐅𓐅𓐅𓐅𓐅𓐅𓐅𓐅✭𓐅𓐅𓐅𓐅𓐅𓐅𓐅𓐅𓐅𓐅𓐅𓐅
 - ➮ [𝐁𝐨𝐭 𝐂𝐡𝐚𝐧𝐧𝐞𝐥 ⚜](t.me/MQQQS)  """
     await m.reply(HELP, disable_web_page_preview=True)
-@Client.on_message(filters.command(["سورس","المطور","repo","alive","المطورين"], prefixes=f"{HNDLR}"))
+@Client.on_message(filters.command(["سورس","المطور","repo","المطورين"], prefixes=f"{HNDLR}"))
 async def repo(client, m: Message):
     await m.delete()
     REPO = f"""
 <b>⇸ **𝐖𝐞𝐥𝐜𝐨𝐦𝐞 ❪ {m.from_user.mention} ❫**
 
-**༄ 𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐞𝐫 ↠** [𝐙 𝐀 𝐈 𝐃 🎼](tg://user?id=1518220300)\n**༄ 𝐂𝐡𝐚𝐧𝐧𝐞𝐥 ↠** [𝐌𝐚𝐝𝐚  𝐔𝐬𝐞𝐫𝐛𝐨𝐭 🧚‍♂](t.me/MQQQS) .\n\n༄ [𝐆𝐘𝐃𝐀𝐀 🧚‍♀](t.me/IGIDD)\n༄ [𝐄𝐒𝐒𝐀 𝄬](t.me/E_4_B)\n༄ [𝐊𝐎𝐊𝐎 メ](t.me/T_G_L)\n\n𐂂
+**༄ 𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐞𝐫 ↠** [𝐙 𝐀 𝐈 𝐃 🎼](tg://user?id=1518220300)\n**༄ 𝐂𝐡𝐚𝐧𝐧𝐞𝐥 ↠** [𝐌𝐚𝐝𝐚  𝐔𝐬𝐞𝐫𝐛𝐨𝐭 🧚‍♂](t.me/MQQQS) .\n\n𐂂
 
 """
     await m.reply(REPO, disable_web_page_preview=True)
