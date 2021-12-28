@@ -38,7 +38,6 @@
         "THUMB": {
             "description": "ضع هنا رابط تلقراف لخلفيه البوت اذا ماعرفت اتركها",
             "required": false
-            "value": "https://telegra.ph/file/af91382ba68bafd5daf42.jpg"
         }
     },
     "addons": [],
