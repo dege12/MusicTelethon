@@ -36,8 +36,8 @@
             "required": true
         },
         "THUMB": {
-            "description": "ضع هنا رابط تلقراف لخلفيه البوت اذا ماعرفت اتركها",
-            "required": false
+            "description": "ضع هنا رابط تلقراف لخلفيه البوت ",
+            "required": true
         }
     },
     "addons": [],
