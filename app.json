@@ -33,12 +33,7 @@
         },
         "ARQ_API_KEY": {
             "description": "احصل عليه من @ARQRoBot",
-            "required": true            
-
-        },
-        "OWNER": {
-            "description": "معرف حساب المالك مع علامه @ مثال : @ZDDDU",
-            "required": true            
+            "required": true                 
 
         }        
     },
