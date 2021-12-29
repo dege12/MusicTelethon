@@ -25,7 +25,7 @@ from pyrogram.errors import FloodWait, MessageNotModified
 from youtubesearchpython import SearchVideos
 from yt_dlp import YoutubeDL
 from MusicTelethon.helpers.merrors import capture_err
-ARQ_API_KEY = "KDWESH-PSVTLZ-BPARTR-DZUIZW-ARQ"
+ARQ_API_KEY = "{ARQ_API_KEY}"
 aiohttpsession = aiohttp.ClientSession()
 arq = ARQ("https://thearq.tech", ARQ_API_KEY, aiohttpsession)
 def ytsearch(query):
