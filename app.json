@@ -33,7 +33,7 @@
         
         },
         "OWNER": {
-            "description": "معرف حساب المالك مع علامه @ مثال : @ZDDDU",
+            "description": "معرف حساب المالك بدون علامه @ مثال : ZDDDU",
             "required": true            
             },
         "OWNER_NAME": {
